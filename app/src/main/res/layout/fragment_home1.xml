@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.home.HomeFragment1">
+
+
+    <include
+        layout="@layout/arrow_strip"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="200dp"
+        android:layout_width="@dimen/arrowStripWidth"
+        android:layout_height="@dimen/arrowStripHeight"
+        />
+
+
+    <include
+        android:id="@+id/layout_right_arrow"
+        layout="@layout/arrow_strip"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="200dp"
+        android:layout_width="@dimen/arrowStripWidth"
+        android:layout_height="@dimen/arrowStripHeight"
+        />
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="@dimen/arrowStripRadius"
+        app:cardElevation="1dp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_marginHorizontal="40dp"
+        >
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+</RelativeLayout>

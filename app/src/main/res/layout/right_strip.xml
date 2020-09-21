@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/stripWidth"
+    android:layout_height="@dimen/stripHeight"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+   <com.google.android.material.card.MaterialCardView
+       android:layout_width="25dp"
+       android:layout_height="65dp"
+       android:layout_marginTop="5dp"
+       android:layout_marginStart="5dp"
+       style="@style/rightStrip"
+       app:cardBackgroundColor="@color/pink">
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:layout_marginVertical="15dp"
+           android:orientation="vertical"
+           android:layout_gravity="center_horizontal"
+           >
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="@dimen/dotCircleSize"
+            android:layout_height="@dimen/dotCircleSize"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="@dimen/dotCircleRadius"
+            />
+
+           <com.google.android.material.card.MaterialCardView
+               android:layout_width="@dimen/dotCircleSize"
+               android:layout_height="@dimen/dotCircleSize"
+               app:cardBackgroundColor="@color/white"
+               android:layout_marginTop="3dp"
+               app:cardCornerRadius="@dimen/dotCircleRadius"
+               />
+
+           <com.google.android.material.card.MaterialCardView
+               android:layout_width="@dimen/dotCircleSize"
+               android:layout_height="@dimen/dotCircleSize"
+               app:cardBackgroundColor="@color/white"
+               android:layout_marginTop="3dp"
+               app:cardCornerRadius="@dimen/dotCircleRadius"
+               />
+
+       </LinearLayout>
+
+   </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/pink"
+        >
+
+      <com.google.android.material.card.MaterialCardView
+          android:layout_width="18dp"
+          android:layout_height="18dp"
+          android:layout_gravity="center"
+          app:cardCornerRadius="9dp"
+          android:elevation="0dp"
+          app:cardBackgroundColor="@color/white"
+          >
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:text="4"
+              android:layout_marginBottom="2dp"
+              android:textColor="@color/black"
+              />
+
+      </com.google.android.material.card.MaterialCardView>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</FrameLayout>

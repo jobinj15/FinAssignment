@@ -1,0 +1,18 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="toolbarHeight">56dp</dimen>
+    <dimen name="boxSize">60dp</dimen>
+    <dimen name="stripWidth">30dp</dimen>
+    <dimen name="stripHeight">70dp</dimen>
+    <dimen name="dotCircleSize">8dp</dimen>
+    <dimen name="dotCircleRadius">4dp</dimen>
+    <dimen name="msgCircleParent">65dp</dimen>
+    <dimen name="msgCircleSize">60dp</dimen>
+    <dimen name="msgCircleRadius">30dp</dimen>
+    <dimen name="arrowStripHeight">55dp</dimen>
+    <dimen name="arrowStripRadius">30dp</dimen>
+    <dimen name="arrowStripWidth">70dp</dimen>
+
+</resources>

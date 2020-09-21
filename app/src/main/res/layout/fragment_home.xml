@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/toolbarHeight"
+    android:background="@color/lightgrey"
+    tools:context=".ui.home.HomeFragment">
+
+    <LinearLayout
+        android:id="@+id/layoutTabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:orientation="horizontal">
+
+        <include
+            layout="@layout/image_card"
+            android:id="@+id/tab1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/boxSize"
+            android:layout_weight="1" />
+
+        <include
+            layout="@layout/image_card"
+            android:layout_width="0dp"
+            android:id="@+id/tab2"
+            android:layout_height="@dimen/boxSize"
+            android:layout_weight="1" />
+
+        <include
+            layout="@layout/image_card"
+            android:layout_width="0dp"
+            android:id="@+id/tab3"
+            android:layout_height="@dimen/boxSize"
+            android:layout_weight="1" />
+
+        <include
+            layout="@layout/image_card"
+            android:layout_width="0dp"
+            android:id="@+id/tab4"
+            android:layout_height="@dimen/boxSize"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_below="@id/layoutTabs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <include
+        layout="@layout/right_strip"
+        android:layout_alignParentRight="true"
+        android:layout_width="@dimen/stripWidth"
+        android:layout_height="@dimen/stripHeight"
+        android:layout_marginTop="100dp"
+        />
+
+    <include
+        layout="@layout/message_fab"
+        android:layout_width="@dimen/msgCircleParent"
+        android:layout_height="@dimen/msgCircleParent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="75dp"
+
+        />
+
+</RelativeLayout>
